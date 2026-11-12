@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | MGF Barbearia</title>
+
+    <link rel="stylesheet" href="/Css/dashboard.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <aside>
+
+        <h2>💈 MGF 💈</h2>
+
+        <nav>
+
+            <a href="/dashboard">
+                <i class='bx bxs-dashboard'></i>
+                Dashboard
+            </a>
+
+           <a href="#" id="linkCortes">
+         <i class='bx bx-cut'></i>
+                 Cortes
+            </a>
+
+            <a href="/clientes">
+                <i class='bx bx-user'></i>
+                Clientes
+            </a>
+
+            <a href="/relatorios">
+                <i class='bx bx-line-chart'></i>
+                Relatórios
+            </a>
+
+            <a href="/configuracoes">
+                <i class='bx bx-cog'></i>
+                Configurações
+            </a>
+
+            <a href="/logout">
+                <i class='bx bx-log-out'></i>
+                Sair
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main>
+
+        <header>
+
+            <h1>Dashboard</h1>
+
+            <p id="data"></p>
+
+        </header>
+
+        <!-- CARDS -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Faturamento Hoje</h3>
+
+                <h2 id="faturamento">
+                    R$ 0,00
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Cortes Hoje</h3>
+
+                <h2 id="cortes">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Ticket Médio</h3>
+
+                <h2 id="ticket">
+                    R$ 0,00
+                </h2>
+
+            </div>
+
+        </section>
+
+        <!-- ÚLTIMOS CORTES -->
+
+        <section class="ultimos">
+
+            <h2>Últimos Cortes</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cliente</th>
+
+                        <th>Corte</th>
+
+                        <th>Valor</th>
+
+                        <th>Pagamento</th>
+
+                        <th>Data</th>
+
+                        <th>Horário</th>
+
+                        <th>Observações</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="lista">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <iframe
+    id="frameCortes"
+    src=""
+    style="display: none; width: 100%; min-height: 750px; border: none;">
+</iframe>
+
+
+    </main>
+
+    <script src="/JS/dashboard.js"></script>
+    <script src="/JS/menu.js"></script>
+
+</body>
+
+</html>

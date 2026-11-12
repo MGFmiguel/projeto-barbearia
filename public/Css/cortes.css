@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: transparent;
+}
+
+.cortes {
+    width: 100%;
+    padding: 25px;
+}
+
+/* ========================= */
+/* FORMULÁRIO */
+/* ========================= */
+
+#formCorte {
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+#formCorte h1 {
+
+    margin-bottom: 20px;
+
+}
+
+#formCorte label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: 600;
+
+}
+
+#formCorte input,
+#formCorte select,
+#formCorte textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+}
+
+#formCorte button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #222;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+/* ========================= */
+/* LISTA */
+/* ========================= */
+
+.listaCortes {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+.listaCortes h2 {
+
+    margin-bottom: 20px;
+
+}
+
+.tabela {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+
+    padding: 12px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+th {
+
+    font-weight: 600;
+
+}
+
+/* ========================= */
+/* BOTÕES */
+/* ========================= */
+
+.btnEditar,
+.btnExcluir {
+
+    border: none;
+
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-right: 5px;
+
+}
+
+.btnEditar {
+
+    background: #333;
+
+    color: white;
+
+}
+
+.btnExcluir {
+
+    background: #b00020;
+
+    color: white;
+
+}

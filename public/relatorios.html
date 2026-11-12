@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios | MGF Barbearia</title>
+    <link rel="stylesheet" href="/Css/relatorios.css">
+</head>
+<body>
+    <main class="pagina">
+        <a class="voltar" href="/dashboard">← Voltar ao painel</a>
+        <h1>Relatórios de atendimento</h1>
+        <form id="filtro">
+            <label>De <input type="date" id="inicio" required></label>
+            <label>Até <input type="date" id="fim" required></label>
+            <button type="submit">Gerar relatório</button>
+        </form>
+        <p id="mensagem" role="status"></p>
+        <section class="resumo" aria-live="polite">
+            <article><span>Faturamento</span><strong id="faturamento">R$ 0,00</strong></article>
+            <article><span>Atendimentos</span><strong id="quantidade">0</strong></article>
+            <article><span>Ticket médio</span><strong id="ticket">R$ 0,00</strong></article>
+        </section>
+        <div class="tabela"><table>
+            <thead><tr><th>Data</th><th>Hora</th><th>Cliente</th><th>Serviço</th><th>Pagamento</th><th>Valor</th></tr></thead>
+            <tbody id="registros"></tbody>
+        </table></div>
+    </main>
+    <script src="/JS/relatorios.js"></script>
+</body>
+</html>

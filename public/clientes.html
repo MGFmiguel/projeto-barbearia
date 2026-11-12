@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | MGF Barbearia</title>
+    <link rel="stylesheet" href="/Css/clientes.css">
+</head>
+<body>
+    <main class="pagina-clientes">
+        <a class="voltar" href="/dashboard">← Voltar ao painel</a>
+        <h1>Clientes</h1>
+        <label for="pesquisaCliente">Pesquisar por nome ou telefone</label>
+        <input id="pesquisaCliente" type="search" placeholder="Digite para pesquisar..." autocomplete="off">
+        <div class="tabela"><table>
+            <thead><tr><th>Nome</th><th>Telefone</th><th>Último corte</th><th>Total gasto</th></tr></thead>
+            <tbody></tbody>
+        </table></div>
+        <p id="mensagem" role="status"></p>
+    </main>
+    <script src="/JS/clientes.js"></script>
+</body>
+</html>

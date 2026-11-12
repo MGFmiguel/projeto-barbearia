@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações | MGF Barbearia</title>
+    <link rel="stylesheet" href="/Css/configuracoes.css">
+</head>
+<body>
+    <main class="painel">
+        <a class="voltar" href="/dashboard">← Voltar ao painel</a>
+        <h1>Configurações do administrador</h1>
+        <p>Altere a senha usada para acessar esta conta de administrador.</p>
+        <form id="formSenha">
+            <label for="senhaAtual">Senha atual</label>
+            <input id="senhaAtual" name="senhaAtual" type="password" autocomplete="current-password" required>
+            <label for="novaSenha">Nova senha</label>
+            <input id="novaSenha" name="novaSenha" type="password" minlength="12" maxlength="200" autocomplete="new-password" required>
+            <label for="confirmarSenha">Confirme a nova senha</label>
+            <input id="confirmarSenha" type="password" minlength="12" maxlength="200" autocomplete="new-password" required>
+            <button type="submit">Atualizar senha</button>
+            <p id="mensagem" role="status"></p>
+        </form>
+    </main>
+    <script src="/JS/configuracoes.js"></script>
+</body>
+</html>
