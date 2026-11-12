@@ -1,0 +1,76 @@
+:root {
+    color-scheme: dark;
+    --fundo: #111111;
+    --superficie: #181818;
+    --superficie-clara: #222222;
+    --borda: #393939;
+    --texto: #f5f5f5;
+    --texto-suave: #c8c8c8;
+    --dourado: #d4af37;
+    --dourado-hover: #e1bd52;
+}
+
+body {
+    color: var(--texto);
+    background-color: var(--fundo);
+}
+
+h1, h2, h3, label, p, th, td { color: var(--texto); }
+h1, h2 { color: var(--dourado); }
+a { color: var(--dourado-hover); }
+a:hover { color: var(--dourado); }
+
+button, input, select, textarea {
+    font: inherit;
+    border-radius: 8px;
+}
+
+input, select, textarea {
+    color: var(--texto);
+    background: var(--superficie-clara);
+    border: 1px solid var(--borda);
+}
+
+input::placeholder, textarea::placeholder { color: var(--texto-suave); }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--dourado); outline-offset: 1px; }
+
+button, #formCorte button, .btnEditar, .btnExcluir {
+    color: #111111;
+    background: var(--dourado);
+    border: 0;
+    font-weight: 600;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+button:hover, #formCorte button:hover, .btnEditar:hover, .btnExcluir:hover {
+    color: #111111;
+    background: var(--dourado-hover);
+}
+
+button:disabled { opacity: .65; cursor: not-allowed; }
+
+.login, .pagina-clientes, .pagina, .painel, #formCorte, .listaCortes, .card {
+    color: var(--texto);
+    background: rgb(24 24 24 / 94%);
+    border: 1px solid var(--borda);
+}
+
+.login h1, #formCorte h1, .listaCortes h2, .pagina-clientes h1, .pagina h1, .painel h1 {
+    color: var(--dourado);
+}
+
+table {
+    color: var(--texto);
+    background: var(--superficie);
+    border-color: var(--borda);
+}
+
+thead { color: #111111; background: var(--dourado); }
+thead th { color: #111111; }
+th, td { border-color: var(--borda); }
+tbody tr, tbody tr:nth-child(even) { background: var(--superficie); }
+tbody tr:hover { background: #d4af3726; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition-duration: .01ms !important; }
+}
