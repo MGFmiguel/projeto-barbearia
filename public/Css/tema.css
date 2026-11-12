@@ -6,8 +6,8 @@
     --borda: #393939;
     --texto: #f5f5f5;
     --texto-suave: #c8c8c8;
-    --dourado: #d4af37;
-    --dourado-hover: #e1bd52;
+    --destaque: #c5c5c5;
+    --destaque-hover: #f5f5f5;
 }
 
 body {
@@ -16,9 +16,9 @@ body {
 }
 
 h1, h2, h3, label, p, th, td { color: var(--texto); }
-h1, h2 { color: var(--dourado); }
-a { color: var(--dourado-hover); }
-a:hover { color: var(--dourado); }
+h1, h2 { color: var(--destaque); }
+a { color: var(--destaque-hover); }
+a:hover { color: var(--destaque); }
 
 button, input, select, textarea {
     font: inherit;
@@ -32,11 +32,11 @@ input, select, textarea {
 }
 
 input::placeholder, textarea::placeholder { color: var(--texto-suave); }
-input:focus, select:focus, textarea:focus { outline: 2px solid var(--dourado); outline-offset: 1px; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--destaque); outline-offset: 1px; }
 
 button, #formCorte button, .btnEditar, .btnExcluir {
     color: #111111;
-    background: var(--dourado);
+    background: var(--destaque);
     border: 0;
     font-weight: 600;
     transition: background-color .2s ease, transform .2s ease;
@@ -44,7 +44,7 @@ button, #formCorte button, .btnEditar, .btnExcluir {
 
 button:hover, #formCorte button:hover, .btnEditar:hover, .btnExcluir:hover {
     color: #111111;
-    background: var(--dourado-hover);
+    background: var(--destaque-hover);
 }
 
 button:disabled { opacity: .65; cursor: not-allowed; }
@@ -56,7 +56,7 @@ button:disabled { opacity: .65; cursor: not-allowed; }
 }
 
 .login h1, #formCorte h1, .listaCortes h2, .pagina-clientes h1, .pagina h1, .painel h1 {
-    color: var(--dourado);
+    color: var(--destaque);
 }
 
 table {
@@ -65,11 +65,12 @@ table {
     border-color: var(--borda);
 }
 
-thead { color: #111111; background: var(--dourado); }
+thead { color: #111111; background: var(--destaque); }
 thead th { color: #111111; }
 th, td { border-color: var(--borda); }
 tbody tr, tbody tr:nth-child(even) { background: var(--superficie); }
-tbody tr:hover { background: #d4af3726; }
+tbody tr:hover { background: #c5c5c526; }
+nav a:hover { color: #111111; background: var(--destaque); }
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { transition-duration: .01ms !important; }

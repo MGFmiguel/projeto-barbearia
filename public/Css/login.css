@@ -23,7 +23,7 @@ body{
     margin:0 auto;
 
     background:rgba(0,0,0,.35);
-    border:1px solid rgba(189, 18, 18, 0.15);
+    border:1px solid rgba(255, 255, 255, 0.15);
     backdrop-filter:blur(8px);
     -webkit-backdrop-filter:blur(8px);
 
@@ -81,5 +81,5 @@ button{
 }
 
 button:hover{
-    background:#f0c94a;
+    background:#ffffff;
 }

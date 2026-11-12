@@ -60,7 +60,7 @@ nav a{
 }
 
 nav a:hover{
-    background:#d4af37;
+    background:#c5c5c5;
     color:black;
     transform:translateX(5px);
 }
@@ -144,5 +144,5 @@ tbody tr:nth-child(even){
 }
 
 tbody tr:hover{
-    background:rgba(212,175,55,.25);
+    background:rgba(255,255,255,.12);
 }
